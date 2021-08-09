@@ -7,8 +7,8 @@
     <title>Geometric Figures</title>
     <link rel="stylesheet" href="./style/style.css">
 </head>
-<body>
 
+<body>
     <header>
         <h1>
             Geometric Figures
@@ -19,34 +19,77 @@
         </p>
     </header>
 
-    <section>
-        <h2>
-            area and perimeter calculate
-        </h2>
-            <form action="">
-                <label for= "squareInput">
-                    Calculate the area and perimeter of a square:
-                </label>
 
+<section>
+<div class="container_Items">
+    <div class="card">
+            <h1>Square</h1>
+        <img src="https://img.icons8.com/dotty/80/000000/penrose-square.png" />
+            <p>Calculate the area and perimeter of a square:</p>
+
+        <div class="visual">
+                <form action="">
+                    <label for="squareInput"></label>
+                    <input
+                        id="squareInput"
+                        type="number"
+                        placeholder="Entry your number here"
+                        required
+                        />
+                    <button
+                        type="button"
+                        onclick="calculateSquarePerimeter()"
+                        >
+                        Calculate the perimeter
+                    </button>
+
+                    <button
+                        type="button"
+                        onclick="calculateSquareArea()"
+                        >
+                        Calculate the area
+                    </button>
+                </form>
+        </div>
+    </div>
+
+
+    <div class="card">
+        <h1>Circle</h1>
+            <img src="https://img.icons8.com/wired/64/000000/circled.png" />
+
+        <div class="visual">
+            <form action="">
+                <label for="circleInput"></label>
                 <input
-                id = "squareInput"
-                type = "number">
+                    id="circleInput"
+                    type="number"
+                    placeholder="Entry your number here"
+                    required>
 
                 <button
-                type = "button"
-                onclick = "calculateSquarePerimeter()">
-                    Calculate the perimeter
+                    type="button"
+                    onclick="calculateCirclePerimeter()">
+                        Calculate the perimeter
                 </button>
 
                 <button
-                type="button"
-                onclick = "calculateSquareArea()">
+                    type="button"
+                    onclick="calculateCircleArea()">
                     Calculate the area
                 </button>
+
             </form>
-    </section>
+        </div>
+    </div>
 
-
+    <div class="card">
+        <h1>Triangle - Card 2</h1>
+        <img src="https://img.icons8.com/pastel-glyph/64/000000/warning-triangle.png" />
+        <div class="visual"></div>
+    </div>
+</div>
+</section>
 
 
 <script src="./figures.js"></script>
