@@ -6,6 +6,7 @@
 body {
   font-family: system-ui, sans-serif;
   background-color: #bcffb9;
+  padding: 2rem;
 }
 
 html {
@@ -32,15 +33,29 @@ header p {
 
 /* Items Container */
 
-section {
-  width: 100%;
-  height: 80vh;
+main {
+  max-width: 500px;
+  margin: 0 auto;
 }
 
-.container_Items {
-  display: grid;
-  grid-gap: 2rem;
-  grid-template-columns: repeat(3, 1fr);
+article {
+  margin: 1rem 0;
+}
+
+/* Now lets do a Grid-based layout */
+@supports (display: grid) {
+  main {
+    max-width: 10000px;
+    margin: 0;
+  }
+  article {
+    margin: 0;
+  }
+  .items_Container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+  }
 }
 
 .card {
@@ -71,10 +86,13 @@ section {
 }
 
 .visual button {
-  width: 50%;
+  margin-top: auto;
+  width: 45%;
   text-align: center;
   margin: 0px auto;
+  cursor: pointer;
   border-radius: 5px;
+  background-color: rgb(187, 255, 184, 0.6);
 }
 
 .card {

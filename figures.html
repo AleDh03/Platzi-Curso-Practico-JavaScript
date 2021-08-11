@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geometric Figures</title>
+    <link rel="stylesheet" href="./style/style.css">
+
+</head>
+<body>
+    <header>
+        <h1>
+            Geometric Figures
+        </h1>
+
+        <p>
+            This is the first JavaScript taller.
+        </p>
+    </header>
+    <main class="items_Container">
+            <article class="card">
+                <h1>Square</h1>
+                <img src="https://img.icons8.com/dotty/80/000000/penrose-square.png" />
+                <p>Calculate the area and perimeter of a square:</p>
+
+                <div class="visual">
+                    <form action="">
+                        <label for="squareInput"></label>
+                        <input id="squareInput" type="number" placeholder="Entry your number here" required />
+                        <button type="button" onclick="calculateSquarePerimeter()">
+                            Calculate the perimeter
+                        </button>
+
+                        <button type="button" onclick="calculateSquareArea()">
+                            Calculate the area
+                        </button>
+                        <p id="squareResult"></p>
+                    </form>
+                </div>
+            </article>
+
+
+            <article class="card">
+                <h1>Circle</h1>
+                <img src="https://img.icons8.com/wired/64/000000/circled.png" />
+                <p>Calculate the area and perimeter of a circle:</p>
+
+                <div class="visual">
+                    <form action="">
+                        <label for="circleInput"></label>
+                        <input id="circleInput" type="number" placeholder="Entry your number here" required>
+
+                        <button type="button" onclick="calculateCirclePerimeter()">
+                            Calculate the perimeter
+                        </button>
+
+                        <button type="button" onclick="calculateCircleArea()">
+                            Calculate the area
+                        </button>
+
+                    </form>
+                </div>
+            </article>
+
+            <article class="card">
+                <h1>Triangle</h1>
+                <img src="https://img.icons8.com/pastel-glyph/64/000000/warning-triangle.png" />
+                <p>Calculate the area and perimeter of a triangle:</p>
+
+                <div class="visual">
+                    <form action="">
+                        <label for="triangleInput"></label>
+                        <input id="triangleInput" type="number" placeholder="Entry your number here" required>
+                        <button type="button" onclick="calculateTrianglePerimeter()">
+                            Calculate the perimeter
+                        </button>
+
+                        <button type="button" onclick="calculateTriangleArea()">
+                            Calculate the area
+                        </button>
+                    </form>
+                </div>
+            </article>
+    </main>
+
+    <footer class="footer"></footer>
+
+
+    <script src="./figures.js"></script>
+</body>
+</html>

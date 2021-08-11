@@ -23,11 +23,11 @@ console.group("Circle")
     // Circunferencia
     const circlePerimeter = (radio) => {
         const diameter = circleDiameter(radio);
-                return diameter * PI;
+                return Math.floor(diameter * PI);
     }
 
     // Area
-    const circleArea = (radio) => (radio * radio) * PI;
+    const circleArea = (radio) => Math.floor((radio * radio) * PI);
 
 console.groupEnd()
 
@@ -54,14 +54,14 @@ console.groupEnd()
         const input = document.getElementById("squareInput");
         const value = input.value;
         const perimeter = squarePerimeter(value);
-        alert('The perimeter is' + perimeter)
+        alert('The perimeter is ' + perimeter)
     }
 
     function calculateSquareArea ()  {
         const input = document.getElementById("squareInput");
         const value = input.value;
         const area = squareArea(value);
-        alert('The area is' + area)
+        alert('The area is ' + area)
     }
 
 // Circle
@@ -86,3 +86,18 @@ console.groupEnd()
     //     const value = input.value;
     //     alert(diameter)
     // }
+
+
+function calculateTrianglePerimeter () {
+    const input = document.getElementById("triangleInput");
+    const value = input.value;
+    const perimeter = trianglePerimeter(value);
+    alert('The perimeter is: ' + perimeter)
+}
+
+function calculateTriangleArea () {
+    const input = document.getElementById("triangleInput")
+    const value = input.value;
+    const area = triangleArea(value);
+    alert('The area is: ' + area)
+}
