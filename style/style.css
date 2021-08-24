@@ -64,10 +64,10 @@ article {
 }
 
 .visual {
-  height: 90px;
+  height: 150px;
   width: 100%;
   background: wheat;
-  margin: 2rem 1rem;
+  margin: 2.5rem 1.5rem;
   border-radius: 10px;
 }
 
@@ -75,7 +75,7 @@ article {
   display: flex;
   flex-direction: column;
   gap: 5px;
-  margin-top: 0px auto;
+  margin: 0px auto;
 }
 
 .visual input {
@@ -86,7 +86,6 @@ article {
 }
 
 .visual button {
-  margin-top: auto;
   width: 45%;
   text-align: center;
   margin: 0px auto;

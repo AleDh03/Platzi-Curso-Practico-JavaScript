@@ -2,7 +2,7 @@ console.group("Square")
     const squarePerimeter = (side) =>  side * 4;
     const squareArea = (sideSquare) => sideSquare * 2;
 console.groupEnd();
-
+// -----------------------------------------------------------------------------------
 console.group("Triangle")
 
     const trianglePerimeter = (side1, side2, base) => side1 + side2 + base;
@@ -10,9 +10,7 @@ console.group("Triangle")
     const triangleArea = (base, height) => (base * height) / 2;
 
 console.groupEnd();
-
-
-
+// -----------------------------------------------------------------------------------
 console.group("Circle")
     const PI = Math.PI;
     console.log("PI es: " + PI);
@@ -30,11 +28,7 @@ console.group("Circle")
     const circleArea = (radio) => Math.floor((radio * radio) * PI);
 
 console.groupEnd()
-
-
-
-
-// Isosceles Triangle
+// --------------------------------------------------------------------------------------
 
 console.group("IsoscelesTriangle")
 
@@ -48,7 +42,7 @@ console.group("IsoscelesTriangle")
 console.groupEnd()
 
 
-// Square
+// --------------------------------------------------------------------------------------
     //Here I have interaction whit my html document
     function calculateSquarePerimeter () {
         const input = document.getElementById("squareInput");
@@ -64,7 +58,7 @@ console.groupEnd()
         alert('The area is ' + area)
     }
 
-// Circle
+// --------------------------------------------------------------------------------------
     //Here I have interaction whit my html document
         function calculateCirclePerimeter () {
         const input = document.getElementById("circleInput")
@@ -72,7 +66,7 @@ console.groupEnd()
         const perimeter = circlePerimeter(value);
         alert('The perimeter is: ' + perimeter)
     }
-
+// --------------------------------------------------------------------------------------
     function calculateCircleArea ()  {
         const input = document.getElementById("circleInput")
         const value = input.value;
@@ -80,14 +74,14 @@ console.groupEnd()
         alert('The area is: ' + area)
     }
 
-    // function circleDiameter () {
-    //     const input = document.getElementById("circleInput")
-    //     const diameter = circleDiameter(value);
-    //     const value = input.value;
-    //     alert(diameter)
-    // }
+    function circleDiameter () {
+        const input = document.getElementById("circleInput")
+        const diameter = circleDiameter(value);
+        const value = input.value;
+        alert(diameter)
+    }
 
-
+// ----------------------------------------------------------------------------------------
 function calculateTrianglePerimeter () {
     const input = document.getElementById("triangleInput");
     const value = input.value;
@@ -95,6 +89,7 @@ function calculateTrianglePerimeter () {
     alert('The perimeter is: ' + perimeter)
 }
 
+// -----------------------------------------------------------------------------------------
 function calculateTriangleArea () {
     const input = document.getElementById("triangleInput")
     const value = input.value;
